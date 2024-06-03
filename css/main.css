@@ -1,0 +1,75 @@
+header {
+    text-align: center;
+}
+
+.soc_icon {
+    width: 50px;
+    margin-left: 5px;
+}
+
+.soc_icon_mini {
+    width: 25px;
+}
+
+.pic {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+video {
+    width: 10%;
+    height: 10%;
+}
+
+.project {
+    display: flex;
+    padding: 0px;
+}
+
+.project img {
+    flex: 0 0 auto;
+    object-fit: cover;
+    border-radius: var(--pico-border-radius);
+    max-width: 250px;
+    max-height: 250px;
+    padding-right: 10px;
+}
+
+.project video {
+    flex: 0 0 auto;
+    object-fit: cover;
+    border-radius: var(--pico-border-radius);
+    min-width: 250px;
+    min-height: 250px;
+    max-width: 250px;
+    max-height: 250px;
+    padding-right: 10px;
+}
+
+.project div {
+    padding: var(--pico-block-spacing-vertical) var(--pico-block-spacing-horizontal);
+}
+
+
+@media screen and (max-width: 600px) {
+    .project {
+        display: block;
+    }
+    
+    .project img {
+        display: none;
+    }
+
+    .project video {
+        display: none;
+    }
+}
+
+
+
+/* .project.content {
+    flex: 1;
+    padding: 10px;
+} */

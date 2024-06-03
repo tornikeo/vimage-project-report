@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark" />
+  <link rel="stylesheet" href="css/pico.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="main.js"></script>
+  <title>Tornikeo</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="container">
+      <div><h1>VIMAGE</h1></div>
+      <p>A story about optimization, applied ML and Google Cloud</p>
+  </header>
+  <!-- HEADER -->
+
+  <!-- MAIN -->
+  <main class="container">
+    Our story begins on one pleasant afternoon, with a zoom call from <a href="https://vimageapp.com">VIMAGE</a>. In case you don't know what VIMAGE does: They made an app that is really good at "socializing the image editing". See for yourself below:
+    <p>
+      <figure>
+        <a href="https://vimageapp.com/" style="display: flex; justify-content: center;">
+          <div style="max-width: 50%;">
+            <img src="assets/vimage_screen.png" style="border-radius: 30px;" alt="">
+            <figcaption>
+              Image to video, image to depth, image to animation - that's what VIMAGE does.
+            </figcaption>
+          </div>
+        </a>
+      </figure>
+    </p>
+    
+    <p>
+      Turns out they are pretty good! A fair few customers, but there's a catch. They are bleeding money. The image pipeline they had introduced as a core service inside the app is taking way too long, churning up too much cloud resources, and is also quite frequently messes up background-foreground separation (this is useful for parallax). Worse still, most of the code, as expected of a former successful startup, looks like a main ingredient of bolognese - spaghetti. 
+    </p>
+
+    <p>That's the growing wounds VIMAGE is currently trying heal - in addition to a clear willingness to move most of the infrastructure to Google Cloud - why would you ever want to touch Google Cloud with anything but a 10 foot pole? If I had to guess, it was likely a bunch of credits that Google Cloud offered as a sweetener. Who knows?</p>
+
+    <p>So, it's set: Improve speed, accuracy, and move everything Google Cloud, as efficiently as possible. Ah, and also, integrate with the existing firebase authentication flow - very please.</p>
+
+    <p></p>
+  </main>
+
+  <!-- MAIN -->
+</body>
+
+</html>
